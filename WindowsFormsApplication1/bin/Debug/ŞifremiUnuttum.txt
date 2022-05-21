@@ -1,0 +1,11 @@
+Merhaba Elif Bakmaz
+
+Şifrenizi gönderdiniz ve şifrenizi göndermek için bir metin belgesi gönderildi.
+Şifreniz ve Kimlik numaranız aşağıda belirtilmektedir.
+
+Kimlik Numaranız= 11111111111
+Şifreniz = 12345
+
+Güvenliğiniz için giriş yaptıktan sonra lütfen hemen şifrenizi değiştirin.
+
+Hastane ekibiniz
