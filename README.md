@@ -27,3 +27,5 @@
 ![image](https://cdn.discordapp.com/attachments/828589873253449838/977502142019555368/Ekran_goruntusu_2022-05-21_121342.jpg)
 ![image](https://cdn.discordapp.com/attachments/828589873253449838/977502161724383292/unknown.png)
 ![image](https://cdn.discordapp.com/attachments/828589873253449838/977502161963483177/unknown.png)
+
+* Geliştirdikce projeyi güncelliyeceğim.
