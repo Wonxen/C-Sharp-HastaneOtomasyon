@@ -20,8 +20,6 @@ namespace WindowsFormsApplication1
         //--------------------------------------------------//--------------------------------------------------//--------------------------------------------------
         Form1 F1 = new Form1();
         //--------------------------------------------------//--------------------------------------------------//--------------------------------------------------
-        bool Gonderildimi = true;
-        //--------------------------------------------------//--------------------------------------------------//--------------------------------------------------
         OleDbCommand Komut;
         OleDbDataReader Oku;
         //--------------------------------------------------//--------------------------------------------------//--------------------------------------------------
@@ -30,9 +28,9 @@ namespace WindowsFormsApplication1
             try
             {
                 F1.Baglan.Open();
-                Komut = new OleDbCommand("SELECT * FROM Hesaplar WHERE Tc='" + textBox1.Text + "'", F1.Baglan);
+                Komut = new OleDbCommand("SELECT * FROM Hesaplar WHERE Tc=@Tc", F1.Baglan);
+                Komut.Parameters.AddWithValue("@Tc", textBox1.Text);
                 Oku = Komut.ExecuteReader();
-                Gonderildimi = false;
                 if (Oku.Read())
                 {
                     try
