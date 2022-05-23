@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,18 +33,19 @@ namespace WindowsFormsApplication1
                 Komut = new OleDbCommand("SELECT * FROM Hesaplar WHERE Tc='" + textBox1.Text + "'", F1.Baglan);
                 Oku = Komut.ExecuteReader();
                 Gonderildimi = false;
-                while (Oku.Read())
+                if (Oku.Read())
                 {
                     try
                     {
-                        using (System.IO.StreamWriter Dosya = new System.IO.StreamWriter("ŞifremiUnuttum.txt"))
-                        {
-                            String Metin = ("Merhaba " + Oku["Adi"].ToString() + " " + Oku["Soyadi"].ToString() + "\n\nŞifrenizi gönderdiniz ve şifrenizi göndermek için bir metin belgesi gönderildi.\nŞifreniz ve Kimlik numaranız aşağıda belirtilmektedir." + "\n\nKimlik Numaranız= " + Oku["Tc"].ToString() + "\nŞifreniz = " + Oku["Parola"].ToString() + "\n\nGüvenliğiniz için giriş yaptıktan sonra lütfen hemen şifrenizi değiştirin." + "\n\nHastane ekibiniz"); 
-                            Dosya.WriteLine(Metin);
-                        }
-                        DialogResult D = MessageBox.Show("Metin belgenize gelen Şifreyle Hesabınıza giriş yapınız.\nGüvenliğiniz İçin Ardından Lütfen şifrenizi değiştiriniz.", "Hastane", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                        DialogResult D = MessageBox.Show(textBox1.Text + " Kimlik numaralı biligleri metin belgenize gönderilicek onaylıyor musunuz?", "Hastane", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                         if (D == DialogResult.Yes)
                         {
+                            using (System.IO.StreamWriter Dosya = new System.IO.StreamWriter("ŞifremiUnuttum.txt"))
+                            {
+                                String Metin = ("Merhaba " + Oku["Adi"].ToString() + " " + Oku["Soyadi"].ToString() + "\n\nŞifrenizi gönderdiniz ve şifrenizi göndermek için bir metin belgesi gönderildi.\nŞifreniz ve Kimlik numaranız aşağıda belirtilmektedir." + "\n\nKimlik Numaranız= " + Oku["Tc"].ToString() + "\nŞifreniz = " + Oku["Parola"].ToString() + "\n\nGüvenliğiniz için giriş yaptıktan sonra lütfen hemen şifrenizi değiştirin." + "\n\nHastane ekibiniz");
+                                Dosya.WriteLine(Metin);
+                            }
+                            MessageBox.Show("Başarıyla metin belgesine bilgileriniz gönderilmiştir.\nGüvenliğiniz için giriş yaptıktan sonra lütfen şifrenizi değiştirin.","Hastane");
                             this.Close();
                         }
                         else
@@ -56,6 +57,10 @@ namespace WindowsFormsApplication1
                     {
                         MessageBox.Show("Hata: " + Hata.Message);
                     }  
+                }
+                else
+                {
+                    MessageBox.Show("Kimlik bilgisi bulunamadı veya eksik girildi.","Hastane");
                 }
             }
             catch (Exception Hata)
