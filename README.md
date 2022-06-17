@@ -19,4 +19,5 @@
 ![image](https://cdn.discordapp.com/attachments/828589873253449838/987390553127784498/Ekran_goruntusu_2022-06-17_081904.jpg)
 ![image](https://cdn.discordapp.com/attachments/828589873253449838/987390554025386054/Ekran_goruntusu_2022-06-17_082029.jpg)
 ![image](https://cdn.discordapp.com/attachments/828589873253449838/987390554444791868/Ekran_goruntusu_2022-06-17_082131.jpg)
-
+![image](https://cdn.discordapp.com/attachments/828589873253449838/987390554683871262/Ekran_goruntusu_2022-06-17_082147.jpg)
+![image](https://cdn.discordapp.com/attachments/828589873253449838/977502161485328444/unknown.png)
