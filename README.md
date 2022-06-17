@@ -13,19 +13,10 @@
 
 # Projeye Dair Görseller
 
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502140438286366/Ekran_goruntusu_2022-05-21_115752.jpg)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502140652208128/Ekran_goruntusu_2022-05-21_115911.jpg)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502140895485962/Ekran_goruntusu_2022-05-21_120010.jpg)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502141163917382/Ekran_goruntusu_2022-05-21_120210.jpg)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502141432344676/Ekran_goruntusu_2022-05-21_120429.jpg)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502142388641802/Screenshot_1.png)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502142669656144/Screenshot_2.png)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502140199206912/Screenshot_3.png)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502161254625300/unknown.png)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502161485328444/unknown.png)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502141763698698/Ekran_goruntusu_2022-05-21_121134.jpg)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502142019555368/Ekran_goruntusu_2022-05-21_121342.jpg)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502161724383292/unknown.png)
-![image](https://cdn.discordapp.com/attachments/828589873253449838/977502161963483177/unknown.png)
+![image](https://cdn.discordapp.com/attachments/828589873253449838/987390554226720818/Ekran_goruntusu_2022-06-17_082055.jpg)
+![image](https://cdn.discordapp.com/attachments/828589873253449838/987390552922259506/Ekran_goruntusu_2022-06-17_081817.jpg)
+![image](https://cdn.discordapp.com/attachments/828589873253449838/987390553337507900/Ekran_goruntusu_2022-06-17_081948.jpg)
+![image](https://cdn.discordapp.com/attachments/828589873253449838/987390553127784498/Ekran_goruntusu_2022-06-17_081904.jpg)
+![image](https://cdn.discordapp.com/attachments/828589873253449838/987390554025386054/Ekran_goruntusu_2022-06-17_082029.jpg)
+![image](https://cdn.discordapp.com/attachments/828589873253449838/987390554444791868/Ekran_goruntusu_2022-06-17_082131.jpg)
 
-* Geliştirdikce projeyi güncelliyeceğim.
