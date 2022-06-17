@@ -2,6 +2,9 @@
 
 * C# Hastane otomasyon projesi içinde OleDb(Access) veri tabanı kullanarak yapılmıştır geliştirilmesi incelenmesi size aittir bazı ufak tefek hatalar çıkabilir çözümü gayet basittir keyifli kodlamalar.
 
+# Proje Hakkında
+* Hastabe otomasyon projesinde bazı yenilikler yakın zamanda gelicektir öncelik olarak parola unuttum kısmı emlak otomasyonunda olduğu gibi txt(Metin Belgesi) içine yazdırmış bulunmaktayım bunu SmtpClient(Mail Göndererek) istedim ama bazı mail kaynaklı hatalar olduğu için onu geliştirip yakın zamananda emlak otomasyon projemle birlikte güncellemeyi düşünüyorum onun yanında veri tabanı kontrolü de güncellenecektir.
+
 # Çalıştırmak İçin
 * İlk olarak bilgisayarına [Visual Studio](https://visualstudio.microsoft.com/tr/downloads/) indir.
 * Bu projeyi zip halinde indir herhangi bir klasöre zipi çıkar
