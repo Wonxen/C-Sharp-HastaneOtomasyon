@@ -1,6 +1,6 @@
-# C# e-Okul Otomasyon
+# C# Hastane Otomasyon
 
-Öncelikle herkese merhaba 👋. Hazırlamış olduğum bu e-Okul otomasyon projesini sizlerle paylaşıyorum. Paylaşma amacım sizlerin de bir şeyler öğrenip deneyip kendinizi geliştirmenizi istememdir.
+Öncelikle herkese merhaba 👋. Hazırlamış olduğum bu hastane otomasyon projesini sizlerle paylaşıyorum. Paylaşma amacım sizlerin de bir şeyler öğrenip deneyip kendinizi geliştirmenizi istememdir.
 
 ### Kurulum Aşamaları:
 
