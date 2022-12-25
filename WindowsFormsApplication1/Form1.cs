@@ -132,7 +132,7 @@ namespace WindowsFormsApplication1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            try
+                        try
             {
                 Baglan.Open();
                 OleDbCommand Komut = new OleDbCommand("SELECT * FROM Hesaplar WHERE Tc=@Tc", Baglan);
@@ -142,41 +142,42 @@ namespace WindowsFormsApplication1
                 {
                     try
                     {
-                        DialogResult D = MessageBox.Show(textBox3.Text + " Kimlik numaralı biligleri metin belgenize gönderilicek onaylıyor musunuz?", "Hastane", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                        if (D == DialogResult.Yes)
-                        {
-                            using (System.IO.StreamWriter Dosya = new System.IO.StreamWriter("Hatırlatma.txt"))
-                            {
-                                String Metin = ("Merhaba " + Oku["Adi"].ToString() + " " + Oku["Soyadi"].ToString() + "\n\nŞifrenizi gönderdiniz ve şifrenizi göndermek için bir metin belgesi gönderildi.\nŞifreniz ve Kimlik numaranız aşağıda belirtilmektedir." + "\n\nKimlik Numaranız= " + Oku["Tc"].ToString() + "\nŞifreniz = " + Oku["Sifre"].ToString() + "\n\nGüvenliğiniz için giriş yaptıktan sonra lütfen hemen şifrenizi değiştirin." + "\n\nHASTANE EKIBINIZ");
-                                Dosya.WriteLine(Metin);
-                            }
-                            MessageBox.Show("Başarıyla metin belgesine bilgileriniz gönderilmiştir.\nGüvenliğiniz için giriş yaptıktan sonra lütfen şifrenizi değiştirin.", "Hastane", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            panel1.Visible = false;
-                            textBox3.Clear();
-                            Devam();
-                        }
-                        else
-                        {
-                            Devam();
-                            textBox3.Clear();
-                            panel1.Visible = false;
-                        }
+                        MailMessage Message = new MailMessage();
+                        SmtpClient Client = new SmtpClient();
+
+                        Client.Credentials = new System.Net.NetworkCredential("hastanesistem@outlook.com", "hastane1");
+                        Client.Port = 587;
+                        Client.Host = "smtp.outlook.com";
+                        Client.EnableSsl = true;
+                        SmtpClient server = new SmtpClient("outlook.com");
+
+                        Message.Body = "Sayın " + Oku["Adi"].ToString() + " " + Oku["Soyadi"].ToString() + "\n\nŞifrenizi gönderdiniz ve şifrenizi göndermek için bir mail gönderildi.\nŞifreniz ve Kimlik numaranız aşağıda belirtilmektedir." + "\n\nKimlik Numaranız: " + Oku["Tc"].ToString() + "\nŞifreniz: " + Oku["Sifre"].ToString() + "\n\nGüvenliğiniz için şifre değişikliğini 24 saat içinde yapmanızı rica ederiz." + "\nProgramımızı tercih ettiğiniz için teşekkür ederiz,\nSaygılarımızla";
+                        Message.Subject = "Parola Hatırlama Talebiniz";
+                        Message.From = new MailAddress("hastanesistem@outlook.com", "Hastane Otomasyon");
+                        Message.To.Add(Oku["ePosta"].ToString());
+
+                        Client.Send(Message);
+
+                        MessageBox.Show("Başarıyla e-posta adresinize bilgileriniz gönderilmiştir.\nGüvenliğiniz için giriş yaptıktan sonra lütfen şifrenizi değiştirin.", "Hastane", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        panel1.Visible = false;
+                        textBox3.Clear();
+                        Devam();
                     }
                     catch (Exception Hata)
                     {
-                        MessageBox.Show(Hata.Message);
+                        MessageBox.Show("Mail gönderilmedi : " + Hata.Message);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Kimlik bilgisi bulunamadı veya eksik girildi.", "Hastane", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Kimlik bilgisi bulunamadı veya eksik girildi.", "Sistem", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                Baglan.Close();
             }
             catch (Exception Hata)
             {
                 MessageBox.Show(Hata.Message);
             }
-            Baglan.Close();
         }
 
         private void Form1_Leave(object sender, EventArgs e)
