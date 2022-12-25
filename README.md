@@ -31,6 +31,6 @@ Projemi kullanıp bana destek olan herkese teşekkür ederim. Bana [**Mail Gönd
      <img src="https://cdn.discordapp.com/attachments/828589873253449838/987390554025386054/Ekran_goruntusu_2022-06-17_082029.jpg">
      <img src="https://cdn.discordapp.com/attachments/828589873253449838/987390554444791868/Ekran_goruntusu_2022-06-17_082131.jpg">
      <img src="https://cdn.discordapp.com/attachments/828589873253449838/987390554683871262/Ekran_goruntusu_2022-06-17_082147.jpg">
-     <img src="https://cdn.discordapp.com/attachments/828589873253449838/977502161485328444/unknown.png">
+     <img src="https://cdn.discordapp.com/attachments/1018013456730959976/1056502755553968138/image.png">
   </p>
   </details>
