@@ -151,7 +151,7 @@ namespace WindowsFormsApplication1
                         Client.EnableSsl = true;
                         SmtpClient server = new SmtpClient("outlook.com");
 
-                        Message.Body = "Sayın " + Oku["Adi"].ToString() + " " + Oku["Soyadi"].ToString() + "\n\nŞifrenizi gönderdiniz ve şifrenizi göndermek için bir mail gönderildi.\nŞifreniz ve Kimlik numaranız aşağıda belirtilmektedir." + "\n\nKimlik Numaranız: " + Oku["Tc"].ToString() + "\nŞifreniz: " + Oku["Sifre"].ToString() + "\n\nGüvenliğiniz için şifre değişikliğini 24 saat içinde yapmanızı rica ederiz." + "\nProgramımızı tercih ettiğiniz için teşekkür ederiz,\nSaygılarımızla";
+                        Message.Body = "Sayın " + Oku["Adi"].ToString() + " " + Oku["Soyadi"].ToString() + "\n\nParola hatırlatma talebiniz başarıyla oluşturuldu ve mail gönderildi.\nŞifreniz ve kimlik numaranız aşağıda belirtilmektedir." + "\n\nKimlik Numaranız: " + Oku["Tc"].ToString() + "\nŞifreniz: " + Oku["Sifre"].ToString() + "\n\nGüvenliğiniz için şifre değişikliğini 24 saat içinde yapmanızı rica ederiz." + "\nProgramımızı tercih ettiğiniz için teşekkür ederiz,\nSaygılarımızla";
                         Message.Subject = "Parola Hatırlama Talebiniz";
                         Message.From = new MailAddress("hastanesistem@outlook.com", "Hastane Otomasyon");
                         Message.To.Add(Oku["ePosta"].ToString());
